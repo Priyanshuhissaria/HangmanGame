@@ -1,0 +1,13 @@
+button{
+  margin: 1px;
+}
+.outputs{
+  height: 50px;
+  width: 50px;
+  margin: 2px;
+  background-color: rgb(205, 194, 194);
+}
+.box{
+  margin-top: 100px;
+  text-align: center;
+}

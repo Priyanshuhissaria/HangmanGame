@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4 box" (keyup)="keyPress($event)">
+    <div>
+      <img
+        src="{{ '../../../assets/hangman/hangman' + livesCount + '.png' }}"
+      />
+    </div>
+    <button class="outputs" *ngFor="let val of outputs">
+      {{ val }}
+    </button>
+    <h4 class="text-success">Hint: {{ hint }}</h4>
+    <button
+      class="btn btn-primary"
+      *ngFor="let btn of buttons"
+      (click)="onKeyboardClick(btn.val)"
+      name="{{ btn.val }}"
+      [disabled]="btn.touched"
+    >
+      <div class="container">{{ btn.val }}</div>
+    </button>
+  </div>
+</div>

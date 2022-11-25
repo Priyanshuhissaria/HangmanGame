@@ -1,0 +1,12 @@
+<div class="container-fluid d-flex justify-content-center">
+  <div class="jumbotron">
+    <img src="{{'../../../assets/hangman/hangman'+imgIdx+'.png'}}" />
+    <p class="lead">
+      {{ message1 }}
+    </p>
+    <p>{{ message2 }}</p>
+    <a class="btn btn-primary btn-lg" (click)="onStartBtnClick()" role="button"
+      >Start game</a
+    >
+  </div>
+</div>
